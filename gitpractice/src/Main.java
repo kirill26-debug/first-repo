@@ -3,10 +3,10 @@ public class Main {
         System.out.println("Hello, Git! This is my Car!");
 
         Car car1 = new Car("BMW", "5-series", 2022, 2500);
-        Main.print(car1);
+        Main.printCar(car1);
     }
 
-    private static void print(Car car1) {
+    private static void printCar(Car car1) {
         System.out.println("Mark: " + car1.getMark() + "\nModel: " + car1.getModel() +
                 "\nYear: " + car1.getYear() + "\nWeight: " + car1.getWeight());
         System.out.println("\n");
