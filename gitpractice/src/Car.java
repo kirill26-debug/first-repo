@@ -27,7 +27,7 @@ public class Car {
 
     public void setMark(String mark) {this.mark = mark;}
 
-    private static void printCar(Car car1) {
+    protected static void printCar(Car car1) {
         System.out.println("Mark: " + car1.getMark() + "\nModel: " + car1.getModel() +
                 "\nYear: " + car1.getYear() + "\nWeight: " + car1.getWeight());
         System.out.println("\n");
