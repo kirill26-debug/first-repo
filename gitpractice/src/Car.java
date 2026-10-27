@@ -1,19 +1,4 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, Git! This is my Car!");
-
-        Car car1 = new Car("BMW", "5-series", 2022, 2500);
-        Main.printCar(car1);
-    }
-
-    private static void printCar(Car car1) {
-        System.out.println("Mark: " + car1.getMark() + "\nModel: " + car1.getModel() +
-                "\nYear: " + car1.getYear() + "\nWeight: " + car1.getWeight());
-        System.out.println("\n");
-    }
-}
-
-class Car {
+public class Car {
     String mark;
     String model;
     int year;
@@ -41,4 +26,10 @@ class Car {
     public String getMark() {return mark;}
 
     public void setMark(String mark) {this.mark = mark;}
+
+    private static void printCar(Car car1) {
+        System.out.println("Mark: " + car1.getMark() + "\nModel: " + car1.getModel() +
+                "\nYear: " + car1.getYear() + "\nWeight: " + car1.getWeight());
+        System.out.println("\n");
+    }
 }
